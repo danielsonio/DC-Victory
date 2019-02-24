@@ -17,6 +17,8 @@ const requestTime = function (req, res, next) {
   
 app.use(requestTime)
 app.use(myLogger)
+
+app.use(express.static(__dirname + "/public"));
   
 router.get('/',function(req,res){
     res.sendFile(path.join(__dirname+'/index.html'))
