@@ -22,7 +22,7 @@ body {
 }
 
 h2 {
-    padding-left: 30px;
+    padding-left: 80px;
     padding-top: 50px;
 }
 
@@ -78,8 +78,8 @@ h2 {
 
 .ten {
     display: flex;
-    grid-column: 3/5;
-    justify-content: flex-left;
+    grid-column: 4/6;
+    justify-content: flex-end;
     align-items: center;
     padding: 20px;
 }
@@ -137,4 +137,13 @@ footer {
 
 #disclaimer {
     height: 70px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    h2 {
+        font-size: 40px;
+    }
+
 }
