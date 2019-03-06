@@ -4,6 +4,7 @@ const path = require('path')
 const router = express.Router()
 
 
+
 const myLogger = function (req, res, next) {
     console.log('LOGGED')
     next()
@@ -30,3 +31,5 @@ app.use('/', router);
 app.listen(process.env.PORT || 3000, function(){
     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
   });
+
+
